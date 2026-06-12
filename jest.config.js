@@ -8,4 +8,14 @@ module.exports = {
   transform: {
     ...tsJestTransformCfg,
   },
+  
+  collectCoverage: true,
+ collectCoverageFrom: [
+ "src/**/*.{ts, tsx}",
+ "!**/node_modules/**",
+ "!**/dist/**",
+ ],
+ coverageDirectory: "coverage",
+ coverageReporters: ["text", "lcov", "html"],
+
 };

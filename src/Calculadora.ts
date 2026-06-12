@@ -11,4 +11,10 @@ export class Calculadora{
     public multiplicacao(n1: number, n2: number): number{
         return n1 * n2;
     }
+    public radicalizacao(n1: number): number{
+        return Math.sqrt(n1);
+    }
+    public potencia(n1: number, n2: number): number{
+        return n1 ** n2;
+    }
 }
